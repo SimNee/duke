@@ -75,5 +75,6 @@ public class Storage {
         if (!tmpDir.exists()) {
             tmpDir.createNewFile();
         }
+        assert tmpDir.exists(): "File not created";
     }
 }
